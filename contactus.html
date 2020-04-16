@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href="img/LOGO1.jpg" />
+<meta charset="UTF-8">
+<meta name="description" content="free Educational and career guidance">
+<meta name="keywords" content="passion,career,career guidance,guidance,inspiration,life,educaion,free,find passion">
+<meta name="author" content="Your Wellwishers">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+h1 {position:absolute;
+	color:#0000CD;
+	left:45%;
+	top: 1.8%;
+}
+h4 {position:absolute;
+	color:gray;
+	left:50%;
+	top: 8.8%;
+}
+.header {
+	background-color: #DDA0DD;
+	padding: 56px;
+}
+body.impact {	
+  font-family: sans-serif;
+  background-color:#DCDCDC;
+}
+.xyz{
+	position:absolute;
+	left:37%;
+	top: 2%;
+	height:15%;
+	width:7.5%;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	border: 1px solid #555;
+	width: 25%;
+	background-color: #4CAF50;
+	height: 52%; 
+	position: fixed;
+}
+li {
+	padding:8px;
+	text-align: center;
+	border-bottom: 2.2px solid #555;
+	
+}
+
+li:last-child {
+  border-bottom: none;
+}
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container div - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+.abc {text-align:center;
+}
+.jkl{height:180px;
+	width:320px;
+}
+.button {
+  background-color: #FF6347;
+  border: none;
+  color: white;
+  padding: 5px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+</style>
+<script>
+function yoyo() {
+  var x = document.forms["cont"]["name"].value;
+  var y = document.forms["cont"]["email"].value;
+  var z = document.forms["cont"]["query"].value;
+  if (x == "") {
+    document.getElementById("aa").innerHTML="<i>*Please enter your name<i>";
+    return false;
+  }
+  if (y == "") {
+    document.getElementById("bb").innerHTML="<i>*Please input your E-Mail address.<i>";
+    return false;
+  }
+  if (z == "") {
+    document.getElementById("cc").innerHTML="<i>*Please input your Query.<i>";
+    return false;
+  }
+}
+function tq() {
+	document.getElementById("tq").innerHTML="Thank you for the suggestion/asking query.<br>You will be soon contacted by us through e-mail you provided here";
+}
+
+</script>
+<title>FindYourPassion</title>
+</head>
+<body class="impact">
+<div class="header">
+<img src="img/LOGO1.JPG" alt="Logo" class="xyz" width="90" height="90">
+<h1>FindYourPassion</h1>
+<h4>Prodigy in choice</h4>
+</div>
+<ul>
+<li><button class="dropbtn" onclick="window.location.href='index.html'">Home</button></li>
+<li><div class="dropdown">
+  <button class="dropbtn" onClick="window.location.href='car/career.html'">Career</button>
+  <div class="dropdown-content">
+    <a href="car/10th.html">10th +</a>
+    <a href="car/12th.html">12th +</a>
+    <a href="car/bach.html">Bachelor's degree +</a>
+	<a href="car/master.html">After Master's degree</a>
+  </div>
+</div>
+</li>
+<li><div class="dropdown">
+  <button class="dropbtn" onClick="window.location.href='edu/edu.html'">Education</button>
+  <div class="dropdown-content">
+    <a href="edu/10th.html">10th +</a>
+    <a href="edu/12th.html">12th +</a>
+    <a href="edu/bach.html">Bachelor's degree +</a>
+	<a href="edu/master.html">After Master's degree</a>
+  </div>
+</div>
+</li>
+<li><button class="dropbtn" onclick="window.location.href='contactus.html'">Contact Us</button></li>
+<li><button class="dropbtn" onclick="window.location.href='aboutus.html'">About Us</button></li>
+</ul>
+<div class="abc">
+<h2><b>Contact Us<b></h2><br>
+<p><i>Write us at</i><br><b>E-Mail:<a href="mailto:findyourpassion15@gmail.com">findyourpassion15@gmail.com</b></a></p> 
+<p>OR</p>
+<p><i>Write your query/feedback here:</i></p>
+<form name="cont" action="form.php" method="post" onsubmit="return yoyo()" target="_blank">
+<b>Name:</b><input type="text" name="name"><br><br>
+<p id="aa" style="font-size: 12px;font-family:sans;color:red;"></p>
+<b>E-Mail:</b><input type="text" name="email"><br>
+<p id="bb" style="font-size: 12px;font-family:sans;color:red;"></p>
+<b>Your Query/Suggestion:</b><br><br><input type="text" name="query" class="jkl"><br>
+<p id="cc" style="font-size: 12px;font-family:sans;color:red;"></p>
+<input type="submit" onclick="tq()" class="button">
+</form>
+<p id="tq"></p>
+</div>
+</body>
